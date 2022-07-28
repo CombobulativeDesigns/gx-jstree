@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="jsTreeGX">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>Theme</Id>
+					<Name>Theme</Name>
+					<Type>Combo</Type>
+					<Default>Default</Default>
+					<Metadata />
+					<Values>
+						<Value id="Default" desc="Default" />
+						<Value id="DefaultDark" desc="Default Dark" />
+						<Value id="Custom" desc="Custom" />
+					</Values>
+				</Prop>
+				<Prop>
+					<Id>CustomThemePath</Id>
+					<Name>CustomThemePath</Name>
+					<Type>Text</Type>
+					<Metadata>
+						<Value name="FlagScope">DesignTime</Value>
+					</Metadata>
+				</Prop>
+				<Group>
+					<Name>Plugins</Name>
+					<Childs>
+		        <!--<Prop>
+		          <Id>Changed</Id>
+		          <Name>Changed</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>-->
+		        <Prop>
+		          <Id>Checkbox</Id>
+		          <Name>Checkbox</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <!--<Prop>
+		          <Id>ConditionalSelect</Id>
+		          <Name>ConditionalSelect</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>-->
+		        <Prop>
+		          <Id>ContextMenu</Id>
+		          <Name>ContextMenu</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+            <Prop>
+              <Id>ContextMenuCollection</Id>
+              <Name>ContextMenuCollection</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetSelectedNode</Value>
+                <Value name="FlagGetValueMethod">GetSelectedNode</Value>
+                <Value name="FlagDataTypeFilter">jsTree_ContextMenu</Value>
+				        <Value name="FlagHideVariables">False</Value>
+				        <Value name="FlagHideAttributes">True</Value>
+              </Metadata>
+            </Prop>
+		        <Prop>
+		          <Id>DragAndDrop</Id>
+		          <Name>DragAndDrop</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <!--<Prop>
+		          <Id>MassLoad</Id>
+		          <Name>MassLoad</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>-->
+		        <Prop>
+		          <Id>Search</Id>
+		          <Name>Search</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <Prop>
+		          <Id>SearchFieldId</Id>
+		          <Name>SearchFieldId</Name>
+		          <Type>Text</Type>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <Prop>
+		          <Id>Sort</Id>
+		          <Name>Sort</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <!--<Prop>
+		          <Id>State</Id>
+		          <Name>State</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>-->
+		        <Prop>
+		          <Id>Types</Id>
+		          <Name>Types</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <Prop>
+		          <Id>Uniques</Id>
+		          <Name>Uniques</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+		        <Prop>
+		          <Id>WholeRow</Id>
+		          <Name>WholeRow</Name>
+		          <Type>Boolean</Type>
+							<Default>false</Default>
+		          <Metadata>
+		            <Value name="FlagScope">DesignTime</Value>
+		          </Metadata>
+		        </Prop>
+					</Childs>
+				</Group>
+				<Group>
+					<Name>Data</Name>
+					<Childs>
+            <Prop>
+              <Id>TreeCollection</Id>
+              <Name>TreeCollection</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetNodeCollection</Value>
+                <Value name="FlagGetValueMethod">GetNodeCollection</Value>
+                <Value name="FlagDataTypeFilter">jsTree_TreeNodeCollection</Value>
+				        <Value name="FlagHideVariables">False</Value>
+				        <Value name="FlagHideAttributes">True</Value>
+              </Metadata>
+            </Prop>
+						<Prop>
+							<Id>SelectedNodes</Id>
+							<Name>SelectedNodes</Name>
+							<Type>Custom</Type>
+							<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+							<Metadata>
+								<Value name="FlagGetValueMethod">GetSelectedNodes</Value>
+								<Value name="FlagDataTypeFilter">jsTree_IdCollection</Value>
+								<Value name="FlagHideVariables">False</Value>
+								<Value name="FlagHideAttributes">True</Value>
+								<Value name="FlagScope">DesignTime &amp; Runtime</Value>
+							</Metadata>
+						</Prop>
+						<Prop>
+							<Id>CheckedNodes</Id>
+							<Name>CheckedNodes</Name>
+							<Type>Custom</Type>
+							<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+							<Metadata>
+								<Value name="FlagGetValueMethod">GetCheckedNodes</Value>
+								<Value name="FlagDataTypeFilter">jsTree_IdCollection</Value>
+								<Value name="FlagHideVariables">False</Value>
+								<Value name="FlagHideAttributes">True</Value>
+								<Value name="FlagScope">DesignTime &amp; Runtime</Value>
+							</Metadata>
+						</Prop>
+						<Prop>
+							<Id>ExpandedNodes</Id>
+							<Name>ExpandedNodes</Name>
+							<Type>Custom</Type>
+							<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+							<Metadata>
+								<Value name="FlagGetValueMethod">GetExpandedNodes</Value>
+								<Value name="FlagDataTypeFilter">jsTree_IdCollection</Value>
+								<Value name="FlagHideVariables">False</Value>
+								<Value name="FlagHideAttributes">True</Value>
+								<Value name="FlagScope">DesignTime &amp; Runtime</Value>
+							</Metadata>
+						</Prop>
+					</Childs>
+				</Group>
+			</Children>
+		</Group>
+	</Object>
+</Content>
